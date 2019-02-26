@@ -1,0 +1,58 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.title {
+  background-color: #032b2f;
+  height: 80px;
+  text-align: center;
+}
+.title-font {
+  color: #ECF1F5;
+  font-weight: bolder;
+  font-size: 50px;
+  padding-top: 20px;
+}
+
+.navbar {
+  background-color: #08708A;
+  height: 100px;
+}
+
+.random-pet-wrapper {
+  display: grid;
+  grid-rows: 300px, 200px;
+  text-align: center;
+  height: auto;
+  overflow: auto;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.random-pet-wrapper > div {
+  margin-top: 20px;
+  background-color: #56b1bf;
+  border-radius: 20px;
+  color: white;
+}
+.pet-info {
+  height: auto;
+}
+.pet-info-wrapper {
+  display: grid;
+  text-align: center;
+  vertical-align: middle;
+}
+.pet-info-wrapper > ul {
+  margin-top: 10px;
+  text-align: justify;
+  line-height: 1;
+}
+.pet-info-wrapper > ul > li {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
