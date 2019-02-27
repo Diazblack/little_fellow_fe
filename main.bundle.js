@@ -44,8 +44,38 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-	// This file is in the entry point in your webpack config.
-	"use strict";
+	'use strict';
+
+	function randomPet() {
+	  var url = 'https://little-fellow-be.herokuapp.com/api/v1/';
+	  fetch(url).then(function (response) {
+	    return response.json();
+	  }).then(function (petData) {
+	    petshow(petData);
+	  }).catch(function (error) {
+	    return console.log(error);
+	  });
+	}
+
+	function petshow(petData) {
+	  var image = document.getElementById("random-pet");
+	  debugger;
+	  var downloadingImage = new Image();
+	  downloadingImage.onload = function () {
+	    image.src = this.src;
+	  };
+	  downloadingImage.src = petData.img_url;
+
+	  var pronoum = '';
+	  var description = '';
+	  petData.description == 'null' ? description = "Description is not available" : description = petData.description;
+	  petData.sex == 'F' ? pronoum = 'Her name is ' + petData.name : pronoum = 'His name is ' + petData.name;
+
+	  var petInfo = '<div class="pet-info-wrapper"><ul><li>' + pronoum + '</li> <li>' + description + ' </li><li>Location: ' + petData.city + ', ' + petData.state + '</li></ul></div>';
+	  $('.pet-info').append(petInfo);
+	}
+
+	$(document).on("load", randomPet());
 
 /***/ })
 /******/ ]);
