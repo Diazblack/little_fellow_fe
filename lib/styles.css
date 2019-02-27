@@ -31,7 +31,7 @@ img {
 
 .random-pet-wrapper {
   display: grid;
-  grid-rows: 300px, 200px;
+  grid-column:  300px, 200px;
   text-align: center;
   height: auto;
   overflow: auto;
@@ -78,4 +78,41 @@ img {
 }
 .hidden-display {
   display: none;
+}
+
+.find-wrapper {
+  display: grid;
+  grid-column: 300px, 1000px;
+  grid-template-areas:
+        "find-section list-section  . side";
+  text-align: center;
+  height: 600px;
+  overflow: auto;
+}
+.find-section{
+  width: 300px;
+  background: #D0d3c5;
+}
+.list-section {
+  min-width: 300px;
+  width: 1100px;
+  max-width: 1000px;
+  background: #56B1bf;
+
+}
+.forms {
+  margin: auto;
+}
+.forms > ul {
+  margin-top: 10px;
+}
+.forms > ul > li {
+  margin-top: 10px;
+}
+.pet-card  {
+
+  color: white;
+}
+.pet-card > ul  {
+    display: inline-block;
 }

@@ -97,7 +97,7 @@
 	  downloadingImage.src = url;
 	}
 
-	$("document").on("load", randomPet());
+	$(document).load("index.html", randomPet());
 
 /***/ })
 /******/ ]);
