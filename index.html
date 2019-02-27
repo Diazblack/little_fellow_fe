@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <link type="text/css" rel="stylesheet" href="./lib/reset.css">
-  <link type="text/css" rel="stylesheet" href="./lib/styles.css">
-  <meta charset="utf-8">
-  <title>Little Fellow</title>
-</head>
-<body>
-  <div class="title">
-    <h1 class="title-font">Little Fellow</h1>
-  </div>
-
-  <div class="navbar">
-
-  </div>
-
-  <div class="random-pet-wrapper">
-    <div class="pet-img" id="pet-img">
-      <img src="./assets/loading.gif" id='random-pet'>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="./lib/reset.css">
+    <link type="text/css" rel="stylesheet" href="./lib/styles.css">
+    <meta charset="utf-8">
+    <title>Little Fellow</title>
+  </head>
+  <body>
+    <div class="title">
+      <h1 class="title-font">Little Fellow</h1>
     </div>
-    <div class="pet-info" id="pet-info">
+
+    <div class="navbar">
 
     </div>
-  </div>
-  <script
-    src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
-  </script>
-  <script src="main.bundle.js"></script>
-</body>
+
+    <div class="random-pet-wrapper">
+      <div class="pet-img" id="pet-img">
+        <img src="./assets/loading.gif" id='random-pet'>
+      </div>
+      <div class="pet-info" >
+
+      </div>
+
+      <div class="pet-info-show hidden-display" >
+        <ul class="pet-info-list">
+
+        </ul>
+      </div>
+    </div>
+    <script src="lib/index.js"></script>
+    <script
+      src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
+    </script>
+    <script src="main.bundle.js"></script>
+  </body>
 </html>

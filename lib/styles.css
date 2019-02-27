@@ -68,3 +68,14 @@ img {
   margin-right: 10px;
   text-align: center;
 }
+
+.field-title {
+  font-size: 18px;
+}
+.field-title > ul > li {
+  margin-top: 10px;
+  margin-bottom:  10px;
+}
+.hidden-display {
+  display: none;
+}
