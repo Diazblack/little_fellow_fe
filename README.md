@@ -76,7 +76,7 @@ Cesar Jolibois.
 
 * The app don't property display error messages when a wrong search input is submitted
 
-* The Home page photo can won't load when the pet info don't have a url
+* The Home page photo can't load when the pet information don't have a url
 
 * Ajust the image depending on the dimensions  
 
@@ -91,6 +91,8 @@ Cesar Jolibois.
 * Add functionality find show shelter information
 
 * Add functionality find find pets by shelter
+
+* Update breed field to display valid breeds depending on the animal
 
 * improve the User experience
 
