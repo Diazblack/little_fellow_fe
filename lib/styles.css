@@ -19,6 +19,16 @@ body {
   height: 100px;
 }
 
+img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 500px;
+  height: 350px;
+  background: url(./assets/loading.gif) 50% no-repeat;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
 .random-pet-wrapper {
   display: grid;
   grid-rows: 300px, 200px;
@@ -44,7 +54,8 @@ body {
   vertical-align: middle;
 }
 .pet-info-wrapper > ul {
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-top: 15px;
   text-align: justify;
   line-height: 1;
 }
@@ -52,6 +63,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   margin-top: 10px;
+  margin-bottom: 20px;
   margin-left: 10px;
   margin-right: 10px;
   text-align: center;
