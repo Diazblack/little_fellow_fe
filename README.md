@@ -1,79 +1,102 @@
-# Self-Directed Front-End Start Kit
+# Little Fellow
+
+## Introduction
+This application allow the user find information about pets of different breed in adoption.
 
 ## Initial Setup
 
-1. Clone this starter kit repository and rename the repository to anything you'd like in one command:
+These instructions will get a copy of the project up and running on your local machine for development and testing purposes.
 
-  ```shell
-  git clone git@github.com:turingschool-projects/self-directed-fe-starter.git <name of your choice>
-  ```
-2. Change into the new director directory.
+From GitHub clone down repository using the following commands in terminal:
 
-3. Remove the default remote (origin):
+    git clone git@github.com:Diazblack/little_fellow_fe.git
+    cd little_fellow_fe
 
-  ```shell
-  git remote rm origin
-  ```
+## How to Use
 
-4. Create a new repository on GitHub.
+In the project directory run:
 
-5. Add your new repository remote - **your remote URL and user name will be different in the command below**
+### `npm install`
 
-  ```shell
-  git remote add origin git@github.com:<YOUR GITHUB NAME>/<PROJECT NAME>.git
-  ```
+To install all the dependencies.
 
-6. Install the dependencies of the starter kit:
+### Running the Server Locally
 
-  ```shell
-  npm install
-  ```
+### `npm start`
 
-7. Add, commit, and push up to your repository:
+Runs the app in the development mode, to view it in the browser click the link bellow:
+[http://localhost:8080](http://localhost:8080).
 
-  ```shell
-  git add .
-  git commit -m "Initial commit using starter kit"
-  git push origin master
-  ```
-
-## Running the Server Locally
-
-To see your code in action locally, you need to fire up a development server. Use the command:
-
-```shell
-npm start
-```
-
-Once the server is running, visit in your browser:
-
-* `http://localhost:8080/` to run your application.
+Be sure to `npm run build` and commit before each push to master. A few seconds after you push up.
 
 
-## GitHub Pages Setup
+![homepage](assets/home.png)
 
-This site will be served from GitHub Pages in production.
+### Home Page
 
-In order to see your application running on production:
+When a user visit the homepage, will see a basic information about a random pet for adoption, if the user want to see more information about the love animal can click on the button at the end of the page, it will display all the information related if is available.
 
-1. From the command line, run `npm run build`.
+![More details](assets/detail-info.png)
 
-2. Commit and push your application to GitHub.
+### Find page
 
-3. Visit your repository on Github
+![Find Page](assets/find.png)
 
-4. Go to Settings
+The user can click on the left corner of the navegation bar to go on the find page. The user can search by:
 
-5. Under the Github Pages section of Options, select 'master' as your source and click `Save`
+* Location: by adding in the field a `City, ST` or zipcode `00000`
 
-Be sure to `npm run build` and commit before each push to master. A few seconds after you push up, you should be able to see your application at <https://your-github-username.github.io/project-name>.
+* Sex: `F` for Female `M` male
 
+* Size: User should type `S` for small, `M` medium, `L` large, `XL` for extra large sizes.
+
+* Animal: `barnyard`, `bird`, `cat`, `dog`, `horse`, `reptile`, `smallfurry`.
+
+* Age: `Baby`, `Young`, `Adult`, `Senior`.
+
+* Count: how many records the search will return, less then 20 records.
+
+
+
+## Production and Services
+
+A link to the backend app can be found with the documentation [here](https://github.com/Diazblack/little_fellow_be).
+
+The link of the application on Production can be found [here](https://diazblack.github.io/little_fellow_fe/).
+
+## If you wish to contribute:
+
+Fork and clone and create a branch for a new feature. After the feature is complete you can submit a PR to litte_fellow_fe master.
+
+For any questions please contact DiazBlack in Github. Thanks
+
+Cesar Jolibois.
+
+## Known issues
+
+* The app don't property display error messages when a wrong search input is submitted
+
+* The Home page photo can won't load when the pet info don't have a url
+
+* Ajust the image depending on the dimensions  
+
+## Future Iterations
+
+* Create a show page for pets
+
+* Allow users to create accounts and log in
+
+* Add functionality to add, update, and delete favorite pets
+
+* Add functionality find show shelter information
+
+* Add functionality find find pets by shelter
+
+* improve the User experience
 
 ## Built With
 
 * [JavaScript](https://www.javascript.com/)
 * [jQuery](https://jquery.com/)
-* [Express](https://expressjs.com/)
 * [Mocha](https://mochajs.org/)
 * [Chai](https://chaijs.com/)
-
