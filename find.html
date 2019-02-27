@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="./lib/reset.css">
+    <link type="text/css" rel="stylesheet" href="./lib/styles.css">
+    <meta charset="utf-8">
+    <title>Little Fellow</title>
+  </head>
+  <body>
+    <div class="title">
+      <h1 class="title-font">Little Fellow</h1>
+    </div>
+
+    <div class="navbar">
+      <div class="wrapper">
+        <div class="home-section">
+          <a href="index.html"> <button class="index-button">Home</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="find-wrapper">
+      <div class="find-section">
+        <h3>Find Pets</h3>
+        <p>This form allow you to find pet by categories. </p>
+        <p>Only location is require </p>
+        <div class="forms">
+          <ul>
+            <li>
+              Location: <input id='location' type='text' placeholder='Denver, CO'>
+            </li>
+            <li>
+              Sex: <input id='sex' type='text' placeholder='F or M'>
+            </li>
+            <li>
+              Size: <input id='size' type='text' placeholder='S, M, L ,XL'>
+            </li>
+            <li>
+              Animal: <input id='animal' type='text' placeholder='Dog, Cat, Bird'>
+            </li>
+            <li>
+              Breed: <input id='breed' type='text' placeholder='Husky, Domestic Short Hair'>
+            </li>
+            <li>
+              Age: <input id='age' type='text' placeholder='Baby, Young, Adult, Senior'>
+            </li>
+            <li>
+              Count: <input id='count' type='text' placeholder='How many records to return'>
+            </li>
+            <li>
+              <button type="button" name="find-button" id="find-button">Find Pets</button>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="list-section">
+
+      </div>
+    </div>
+    <script src="lib/find.js"></script>
+
+    <script
+      src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
+    </script>
+    <script src="main.bundle.js"></script>
+  </body>
+</html>
